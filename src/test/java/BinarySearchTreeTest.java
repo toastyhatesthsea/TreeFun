@@ -103,7 +103,7 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore("Remove to run test")
+    //@Ignore("Remove to run test")
     @Test
     public void sortsSingleElement() {
         BinarySearchTree<String> binarySearchTree = new BinarySearchTree<>();
@@ -117,7 +117,7 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore("Remove to run test")
+    //@Ignore("Remove to run test")
     @Test
     public void sortsCollectionOfTwoIfSecondInsertedIsSmallerThanFirst() {
         BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
@@ -132,7 +132,7 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore("Remove to run test")
+    //@Ignore("Remove to run test")
     @Test
     public void sortsCollectionOfTwoIfSecondNumberisSameAsFirst() {
         BinarySearchTree<Character> binarySearchTree = new BinarySearchTree<>();
@@ -147,7 +147,7 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore("Remove to run test")
+    //@Ignore("Remove to run test")
     @Test
     public void sortsCollectionOfTwoIfSecondInsertedIsBiggerThanFirst() {
         BinarySearchTree<Character> binarySearchTree = new BinarySearchTree<>();
@@ -162,7 +162,7 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore("Remove to run test")
+    //@Ignore("Remove to run test")
     @Test
     public void iteratesOverComplexTree() {
         BinarySearchTree<String> binarySearchTree = new BinarySearchTree<>();
