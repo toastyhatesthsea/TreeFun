@@ -106,14 +106,21 @@ class BinarySearchTree<T extends Comparable<T>>
 
             //currentList.add(current.getLeft().getData());
             //currentList.add(current.getRight().getData());
-            root = current.getLeft();
-            leftList = this.getAsLevelOrderList();
-
-            root = current.getRight();
-            rightList = this.getAsLevelOrderList();
-
-
             currentList.add(current.getData());
+            if (current.getLeft() != null)
+            {
+                root = current.getLeft();
+                leftList = this.getAsSortedList();
+                currentList.addAll(leftList);
+            }
+
+            if (current.getRight() != null)
+            {
+                root = current.getRight();
+                rightList = this.getAsSortedList();
+                currentList.addAll(rightList);
+
+            }
 
             /*
             List<T> rightList = null;
