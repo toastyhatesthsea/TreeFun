@@ -81,10 +81,8 @@ class BinarySearchTree<T extends Comparable<T>>
                 currentList.addAll(rightList);
 
             }
-
             root = current;
             return currentList;
-
         }
     }
 
